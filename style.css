@@ -177,10 +177,10 @@
     }
   }
 
-  .main {
+  .hero {
     background-color: var(--color-hero-bg);
 
-    .main__wrapper {
+    .hero__wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -193,7 +193,7 @@
       }
     }
 
-    .main__img {
+    .hero__img {
       width: calc(199.89 / 16 * 1rem);
       padding: 31px 0 40px;
 
@@ -203,7 +203,7 @@
       }
     }
 
-    .main__content {
+    .hero__content {
       margin-bottom: 60px;
 
       @media (width >= calc(600 / 16 *1rem)) {
@@ -212,7 +212,7 @@
       }
     }
 
-    .main__heading {
+    .hero__heading {
       color: var(--color-text-light);
       font-size: calc(42 / 16 * 1rem);
       font-weight: 700;
@@ -224,7 +224,7 @@
       }
     }
 
-    .main__paragraph {
+    .hero__paragraph {
       color: var(--color-text-light);
       font-size: calc(24 / 16 * 1rem);
       padding-bottom: 40px;
@@ -234,7 +234,7 @@
       }
     }
 
-    .main__btn_primary {
+    .hero__btn_primary {
       font-size: 18px;
       font-weight: 700;
       background: var(--color-btn-primary-bg);
@@ -250,11 +250,11 @@
       }
     }
 
-    .main__btn_primary_link {
+    .hero__btn_primary_link {
       color: var(--color-btn-primary-text);
     }
 
-    .main__btn_secondary {
+    .hero__btn_secondary {
       font-size: 18px;
       font-weight: 700;
       color: var(--color-btn-secondary-text);
@@ -271,8 +271,59 @@
       }
     }
 
-    .main__btn_secondary_link {
+    .hero__btn_secondary_link {
       color: var(--color-btn-secondary-text);
+    }
+  }
+
+  .features {
+    .features__section {
+      display: flex;
+      flex-direction: column;
+      padding: 60px 0;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        flex-direction: row;
+      }
+    }
+
+    .features__section_one {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        align-items: start;
+      }
+    }
+
+    .features__section_two {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        align-items: start;
+        margin: 0 80px;
+      }
+    }
+
+    .features__section_three {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        align-items: start;
+      }
+    }
+
+    .features__header {
+      font-size: (24 / 16 * 1rem);
+    }
+
+    .features__content {
     }
   }
 }
