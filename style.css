@@ -277,6 +277,8 @@
   }
 
   .features {
+    background: var(--color-main-bg);
+
     .features__section {
       display: flex;
       flex-direction: column;
@@ -321,9 +323,12 @@
 
     .features__header {
       font-size: (24 / 16 * 1rem);
+      margin: 10px 0;
+      color: var(--color-text-dark);
     }
 
     .features__content {
+      color: var(--color-text-dark);
     }
   }
 }
