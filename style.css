@@ -51,12 +51,19 @@
     --c-teal: hsl(180, 100%, 42%);
     --c-transparent: transparent;
     --c-magenta: hsl(320, 85%, 41%);
+    --c-gradient: linear-gradient(
+      to right,
+      hsl(233, 14%, 25%),
+      hsl(232, 58%, 55%),
+      hsl(180, 100%, 42%)
+    );
 
     --color-main-bg: var(--c-white);
     --color-text-dark: var(--c-gray-dark);
     --color-text-light: var(--c-white);
     --color-header-bg: var(--c-purple);
     --color-hero-bg: var(--c-purple);
+    --color-get-started-bg: var(--c-gradient);
     --color-btn-primary-bg: var(--c-teal);
     --color-btn-primary-text: var(--c-gray-dark);
     --color-btn-secondary-bg: var(--c-transparent);
@@ -64,6 +71,7 @@
     --color-btn-secondary-border: var(--c-white);
     --color-btn-secondary-text: var(--c-white);
     --color-fullwidth-bg: var(--c-magenta);
+    --color-btn-get-started-bg: var(--c-white);
   }
 
   *,
@@ -382,8 +390,7 @@
       padding: 60px 0 61px;
 
       @media (width >= calc(600 / 16 * 1rem)) {
-        padding: 80px 0;
-        width: calc(795 / 16 * 1rem);
+        padding-block: 80px;
       }
     }
 
@@ -436,6 +443,50 @@
         align-items: start;
         margin-left: 30px;
       }
+    }
+  }
+
+  .get_started {
+    background: var(--color-get-started-bg);
+
+    .get_started__wrapper {
+      text-align: center;
+      padding-block: 60px;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        padding-block: 80px;
+      }
+    }
+
+    .get_started__heading {
+      color: var(--color-text-light);
+      font-size: calc(36 / 16 * 1rem);
+      font-weight: 700;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        font-size: calc(36 / 16 * 1rem);
+      }
+    }
+
+    .get_started__content {
+      color: var(--color-text-light);
+      font-size: calc(24 / 16 * 1rem);
+      padding: 20px 0 40px;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        font-size: calc(28 / 16 * 1rem);
+      }
+    }
+
+    .get_started__btn {
+      font-size: calc(18 / 16 * 1rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 12px 16px;
+      background: var(--color-btn-get-started-bg);
+      color: var(--color-text-dark);
+      border-radius: 24px;
     }
   }
 }
