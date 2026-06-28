@@ -503,7 +503,7 @@
       width: 128px;
     }
 
-    .footer__content {
+    .footer__grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(154px, 1fr));
       row-gap: 40px;
@@ -515,8 +515,14 @@
       font-weight: 700;
     }
 
-    .footer__list_items {
-      padding: 0;
+    .footer__container {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .footer__list {
+      padding-left: 0;
       list-style-type: none;
       font-size: var(--font-size-p);
     }
