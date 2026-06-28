@@ -513,15 +513,13 @@
     .footer__heading {
       font-size: var(--font-size-h3);
       font-weight: 700;
-    }
-
-    .footer__container {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
+      margin-bottom: 6px;
     }
 
     .footer__list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
       padding-left: 0;
       list-style-type: none;
       font-size: var(--font-size-p);
