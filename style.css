@@ -35,7 +35,7 @@
     --font-size-h1: var(--fs-42);
     --font-size-h2: var(--fs-36);
     --font-size-h3: var(--fs-24);
-    --font-size-h3: var(--fs-22);
+    --font-size-h4: var(--fs-22);
     --font-size-p: var(--fs-18);
     --font-size-btn: var(--fs-18);
 
@@ -117,6 +117,10 @@
 
   h3 {
     font-size: var(--font-size-h3);
+  }
+
+  h4 {
+    font-size: var(--font-size-h4);
   }
 
   a {
@@ -309,7 +313,7 @@
     }
 
     .features__header {
-      font-size: (24 / 16 * 1rem);
+      font-size: var(--font-size-h3);
     }
 
     .features__content {
@@ -497,7 +501,7 @@
     }
 
     .footer__heading {
-      font-size: var(--font-size-h3);
+      font-size: var(--font-size-h4);
       font-weight: 700;
       margin-bottom: 6px;
     }
@@ -512,7 +516,7 @@
     }
 
     .footer__link {
-      font-size: --font-size-p;
+      font-size: var(--font-size-p);
       color: var(--color-text-dark);
     }
 
